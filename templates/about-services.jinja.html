@@ -1,0 +1,33 @@
+{% set why_mike = page_content.about_services.why_train_with_mike %}
+{% set services_block = page_content.about_services.services_overview %}
+
+<section id="about-services-overview">
+  <div class="overview-grid">
+    <div class="overview-column why-mike">
+      <h2>{{ why_mike.title }}</h2>
+      <p>{{ why_mike.blurb }}</p>
+      <ul class="perks-list">
+        {% for perk in why_mike.perks_list %}
+        <li><strong>{{ perk.title }}:</strong> {{ perk.text }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="overview-column services-preview">
+      <h2>{{ services_block.title }}</h2>
+      <p>{{ services_block.blurb }}</p>
+
+      <div class="services-badges">
+        {% for service in  services_block.services %} 
+        <span class="service-tag">{{ service }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="courses-cta-wrap">
+        <a href="courses.html" class="inline-courses-btn">
+          Explore Our Courses &amp; Requirements &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
