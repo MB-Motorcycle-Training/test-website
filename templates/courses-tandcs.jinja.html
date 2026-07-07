@@ -1,0 +1,11 @@
+{% set terms = page_content.terms_conditions %}
+
+<div class="terms-section">
+  <h3>{{ terms.title }}</h3>
+  <ul class="terms-notes">
+    {% for note in terms.notes %}
+    <li>{{ note }}</li>
+    {% endfor %}
+  </ul>
+  <p class="terms-summary">{{ terms.summary }}</p>
+</div>

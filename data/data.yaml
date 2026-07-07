@@ -141,3 +141,34 @@ pages_content:
         - author: "David B."
           rating: 5
           text: "First class instructor and the best in the business. Calm, patient and very attentive. His years of experience make a big difference and his calm approach rubs off on his students."
+
+  courses:
+    page_title: "Price List For Courses"
+    blurb: "Prices from 1st July 2026. Test fees subject to change by DVSA."
+    course_list:
+      - title: "A Full Unrestricted Licence"
+        age_req: "Age 24 (or 21 if candidate has held a full A2 licence for 2 yrs)"
+        bike_spec: "Minimum 595cc Motorcycle with at least 40 kw (54 bhp)"
+        includes: "An Introductory Session (lasts 60-90 minutes), CBT, Module 1 training, one Module 1 test fee, and 7 sessions of Module 2 training (each session 2½ - 3 hours), and one Module 2 test fee."
+        price: "£1200"
+        extras: "Additional sessions (2.5–3 hrs): £150"
+      - title: "A2 Full Restricted Licence"
+        age_req: "Age 19-23"
+        bike_spec: "Minimum 395cc motorcycle at least 25kw/34 bhp. Not exceeding 35 kw (47 bhp)"
+        includes: "An Introductory Session (lasts 60 to 90 minutes), CBT, Module 1 training, and one Module 1 test and 7 sessions (each session 2½-3 hours), and one Module 2 test fee."
+        price: "£1200"
+        extras: "Additional sessions (2.5–3 hrs): £150"
+      - title: "Back to Biking Development Training"
+        age_req: "Full licence holders"
+        bike_spec: ""
+        includes: "2½-3 hours on a 1 to 1 basis."
+        price: "£150"
+        extras: ""
+    terms_conditions:
+      title: "Terms & Conditions"
+      notes:
+        - "Test fees subject to change by DVSA."
+        - "Full Terms & Conditions are available to view at training premises."
+        - "Trainees using their own motorcycles must ensure that their bikes meet all legal requirements."
+        - "Trainees are responsible for themselves to meet the legal requirements to ride the bike."
+      summary: "All fees once paid are non-refundable but the lesson may be re-arranged up to 24 hours prior to the pre-paid course. All in-training packages must be completed within 6 months from the start date. Insurance cover for the motorbike training will be covered to third party and training bike, NOT to personal injury. Although professional instruction will be given to the trainee throughout, any decisions during the instruction made by the trainee are their responsibility. All monies paid or courses booked are non-transferable. Traffic violations are the responsibility of the trainee and not the Instructor."

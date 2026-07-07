@@ -1,0 +1,21 @@
+{% extends "base.jinja.html" %} 
+
+{% block header_extra %} 
+  {% include "hero.jinja.html" %} 
+{% endblock %} 
+
+{% block content %}
+<section id="main-content">
+  <div class="courses-container">
+    
+    {% include "courses-header.jinja.html" %}
+    {% include "courses-grid.jinja.html" %}
+    {% include "courses-tandcs.jinja.html" %}
+
+
+  </div>
+</section>
+{% endblock %} 
+
+{% block body_scripts %}
+{% endblock %}

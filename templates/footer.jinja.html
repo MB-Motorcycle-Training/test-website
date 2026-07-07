@@ -16,8 +16,8 @@
   <div class="footer-container">
     <div class="footer-address">
       <address>
-        {% for line in base_data.address_parts %} {{ line }} {% if not loop.last
-        %} , <br />
+        {% for line in base_data.address_parts %}{{ line }}{% if not loop.last
+        %}, <br />
         {% endif %} {% endfor %}
       </address>
     </div>

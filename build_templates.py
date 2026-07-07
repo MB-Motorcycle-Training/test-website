@@ -8,6 +8,7 @@ TEMPLATES_DIR = ROOT_DIR / "templates"
 DATA_FILE = ROOT_DIR / "data" / "data.yaml"
 BUILD_TARGETS = [
     ("index.jinja.html", "index.html"),
+    ("courses.jinja.html", "courses.html"),
 ]
 
 
