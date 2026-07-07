@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import hashlib
 from pathlib import Path
 import yaml
 from jinja2 import Environment, FileSystemLoader
@@ -10,7 +11,12 @@ BUILD_TARGETS = [
     ("index.jinja.html", "index.html"),
     ("courses.jinja.html", "courses.html"),
 ]
+STYLESHEET = "style.css"
 
+def get_stylesheet_hash() -> str:
+    with open(STYLESHEET, "rb") as f:
+        css_hash = hashlib.md5(f.read()).hexdigest()[:8]
+    return css_hash
 
 def main():
     # Load the YAML database data
@@ -51,6 +57,11 @@ def main():
         try:
             template = env.get_template(template_name)
             rendered_html = template.render(context)
+
+            # Add hash to the stylesheet
+            css_hash = get_stylesheet_hash()
+            rendered_html = rendered_html.replace('style.css', f'style.css?v={css_hash}')
+
 
             # Write out to repo root directory execution pathway
             output_path = ROOT_DIR / output_name
