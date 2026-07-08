@@ -256,6 +256,26 @@
     <li><a href="find_us.html" class="nav-btn">Find Us</a></li>
   </ul>
 </nav>
+
+<script>
+  // Hamburger nav toggle
+  const navToggle = document.getElementById("nav-toggle");
+  const navLinks = document.getElementById("nav-links");
+
+  navToggle.addEventListener("click", function () {
+    const isOpen = navLinks.classList.toggle("is-open");
+    navToggle.setAttribute("aria-expanded", isOpen);
+  });
+
+  // Close the menu after a link is picked (mobile only)
+  navLinks.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") {
+      navLinks.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+</script>      </header>
+
       <main id="content-wrapper"><section id="faq-section">
   <div class="faq-wrap">
     <h1>Frequently Asked Questions</h1>

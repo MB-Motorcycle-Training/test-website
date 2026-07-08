@@ -23,23 +23,6 @@
       }
     });
 
-  // Hamburger nav toggle
-  const navToggle = document.getElementById("nav-toggle");
-  const navLinks = document.getElementById("nav-links");
-
-  navToggle.addEventListener("click", function () {
-    const isOpen = navLinks.classList.toggle("is-open");
-    navToggle.setAttribute("aria-expanded", isOpen);
-  });
-
-  // Close the menu after a link is picked (mobile only)
-  navLinks.addEventListener("click", function (e) {
-    if (e.target.tagName === "A") {
-      navLinks.classList.remove("is-open");
-      navToggle.setAttribute("aria-expanded", "false");
-    }
-  });
-
   const letterToggle = document.getElementById("letter-toggle");
   const letter = document.getElementById("police-letter");
 
