@@ -68,6 +68,18 @@ body {
   font-family: var(--font-body);
 }
 
+/* Default anchor override */
+a {
+  color: var(--color-navy);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
 /* Screen-reader-only content: stays in the accessibility tree, hidden visually */
 .visually-hidden {
   position: absolute;
@@ -215,16 +227,6 @@ body {
 
 .trust-divider {
   color: var(--border-light);
-}
-
-.trust-contact-link {
-  color: var(--color-navy);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.trust-contact-link:hover {
-  text-decoration: underline;
 }
 
 /* ==========================================================================

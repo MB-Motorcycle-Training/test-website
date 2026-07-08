@@ -14,7 +14,6 @@ base_data:
   phone: "07768 340 340"
   phone_normalised: "+447768340340"
   email: "mike@mbmotorcycletraining.co.uk"
-  established: "2004"
       
 
 # Page-specific metadata architecture
@@ -35,7 +34,7 @@ pages_meta:
         "name": "MB Motorcycle Training",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Bee Works, Stubley Hollow, Wreakes Lane",
+          "streetAddress": "Beech Works, Stubley Hollow, Wreakes Lane",
           "addressLocality": "Dronfield",
           "postalCode": "S18 1PN",
           "addressCountry": "GB"
@@ -145,6 +144,7 @@ pages_content:
   courses:
     page_title: "Price List For Courses"
     blurb: "Prices from 1st July 2026. Test fees subject to change by DVSA."
+    course_note: "Unfortunately, we do not offer training for A1 or AM licences."
     course_list:
       - title: "A Full Unrestricted Licence"
         age_req: "Age 24 (or 21 if candidate has held a full A2 licence for 2 yrs)"
@@ -164,6 +164,13 @@ pages_content:
         includes: "2½-3 hours on a 1 to 1 basis."
         price: "£150"
         extras: ""
+      - title: "Pay as You Go - A / A2"
+        age_req: "Dependent on licence"
+        bike_spec: "Dependent on licence"
+        includes: "Pay as you go courses for A Full Unrestricted and A2 Full Restricted Licences"
+        price: "£150"
+        extras: "Pay as you go has limited availability - please enquire for details. Prices for 2½-3 hour lesson. CBT and Mod 1 training have a one-off fee of £250 each."
+
     terms_conditions:
       title: "Terms & Conditions"
       notes:
@@ -171,7 +178,9 @@ pages_content:
         - "Full Terms & Conditions are available to view at training premises."
         - "Trainees using their own motorcycles must ensure that their bikes meet all legal requirements."
         - "Trainees are responsible for themselves to meet the legal requirements to ride the bike."
-      summary: "All fees once paid are non-refundable but the lesson may be re-arranged up to 24 hours prior to the pre-paid course. All in-training packages must be completed within 6 months from the start date. Insurance cover for the motorbike training will be covered to third party and training bike, NOT to personal injury. Although professional instruction will be given to the trainee throughout, any decisions during the instruction made by the trainee are their responsibility. All monies paid or courses booked are non-transferable. Traffic violations are the responsibility of the trainee and not the Instructor."
+        - "Fees paid are non-refundable. Lessons may be re-arranged free of charge with at least 24 hours' notice (phone, voicemail, or text)."
+        - "Appropriate clothing is required for motorcycle training. This means sturdy denim or motorcycle trousers with no rips or tears, and substantial footwear that fully covers the ankle, such as walking boots or similar sturdy boots. Steel toe-caps are not permitted, as they reduce feel through the footwear needed for gear changes."
+      summary: "Cancellations with less than 24 hours' notice will be treated as forfeited, except in cases of genuine emergency (e.g. bereavement, hospitalisation, serious illness or injury), where evidence may be requested (e.g. a hospital letter or similar documentation) before a re-arranged lesson or refund is considered at the instructor's discretion. All in-training packages must be completed within 12 months from the start date. Insurance cover for the motorbike training will be covered to third party and training bike, NOT to personal injury. Although professional instruction will be given to the trainee throughout, any decisions during the instruction made by the trainee are their responsibility. All monies paid or courses booked are non-transferable. Traffic violations are the responsibility of the trainee and not the Instructor."
     mod1_video:
       title: "Watch a Mod 1 Run-Through"
       blurb: "Check out exactly what to expect on the DVSA training pad. Watch the lines, the speeds, and the layout before your big day."
