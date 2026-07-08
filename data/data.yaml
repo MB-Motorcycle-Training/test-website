@@ -90,14 +90,21 @@ pages_content:
     about_services:
       why_train_with_mike:
         title: "Why Train With Mike?"
-        blurb: "With over 30 years of professional instructional experience, Mike doesn’t just teach you how to scramble through a practical test—he focuses on building 110% of the advanced road confidence and safety skills you actually need for the real world."
-        perks_list:
-          - title: "Proven Training Fleet"
-            text: "Reliable, well-maintained 125cc, 500cc, and 600cc machines that are perfect for learning the ropes."
-          - title: "Real-time Coaching"
-            text: "Crystal-clear instructor-to-rider radio systems for instant feedback on the move."
-          - title: "Full Kit Provided"
-            text: "High-visibility safety jackets and essential equipment provided for every single module."
+        blurb: "Mike has over 40 years of training experience - but self-praise is no recommendation, see what our customers say!"
+        testimonials:
+          - quote: "The whole course was done on well-maintained Yamaha 600cc Fazers — one of the many things that set Mike apart from other schools I visited."
+            name: "Mark Grant"
+            context: "Direct Access"
+          - quote: "The training rides were extremely enjoyable, and your radio equipment is crystal clear."
+            name: "Mark Carter"
+            context: "Police Officer, Direct Access"
+          - quote: "You do a brilliant job keeping the bikes in good order for everyone to learn on, so you know you'll be safe riding them."
+            name: "Craig"
+            context: "Direct Access, 2013"
+        facts_list:
+          - "Helmet, gloves and jacket provided"
+          - "Instructor-to-rider radio communication throughout every lesson"
+          - "Well-maintained training fleet, kept safe and reliable"
       services_overview:
         title: "Our Training Programs"
         blurb: "From complete beginners getting onto two wheels for the first time to experienced riders stepping up to high-capacity machinery, we've got you covered."
@@ -122,7 +129,7 @@ pages_content:
         - "Both myself and my friend Mark Grant, who also did the course at the same time, were over the moon when we both passed our tests first time - me passing with no faults and Mark with just one minor fault. Not a bad result for two people who hadn't done a driving test for over 20 years! This was purely down to your training and preparation. I can honestly say I would not have passed my test without your tuition."
         - "I would also like to thank you for the excellent Enhanced Rider Scheme that I did with you soon after passing my test. This gave me even more confidence and knowledge as a newly qualified rider, and made a real difference when I came to insure my new Honda 600 Hornet."
         - "We both passed our Mod 1 tests with zero faults."
-        - "Mike, once again thank you so much for your excellent tuition &mdash; it has been an absolute pleasure meeting you and learning to ride with you. I look forward to recommending you to as many people as possible. I hope to stay in touch and call in for a coffee and a chat on a regular basis."
+        - "Mike, once again thank you so much for your excellent tuition — it has been an absolute pleasure meeting you and learning to ride with you. I look forward to recommending you to as many people as possible. I hope to stay in touch and call in for a coffee and a chat on a regular basis."
       letter_attribution:
           name: "Mark Carter"
           role: "Police Officer • Direct Access Graduate"
@@ -186,3 +193,70 @@ pages_content:
       blurb: "Check out exactly what to expect on the DVSA training pad. Watch the lines, the speeds, and the layout before your big day."
       filename: "assets/final_720_h265_fadeout.mp4"
       poster: "assets/mod1-video-thumb.jpg"
+
+  faq:
+    title: "Frequently Asked Questions"
+    intro: "Everything you need to know about licences, tests and training with Mike — all in one place."
+    categories:
+      - name: "Licence Types"
+        items:
+          - question: "What types of full motorcycle licence are there?"
+            answer: "There are four main categories. AM (minimum age 16) covers mopeds up to 35 km/h and requires CBT, theory and practical tests. A1 (minimum age 17) covers small motorcycles up to 125cc and 11kW. A2 (minimum age 19) covers medium motorcycles up to 35kW, available via Direct Access (CBT, theory and practical tests) or Progressive Access (2 years on an A1 motorcycle plus further tests). A (minimum age 24 via Direct Access, or 21 via Progressive Access) is unrestricted, allowing any size of motorcycle."
+          - question: "Does Mike offer training for all licence types?"
+            answer: "Mike doesn't cover every category, but this page gives you the key facts so you know what applies to you. Give Mike a call on 07768 340 340 to talk through which route fits your situation."
+
+      - name: "Compulsory Basic Training (CBT)"
+        items:
+          - question: "What is CBT and do I need it?"
+            answer: "CBT (Compulsory Basic Training) is the starting point for every learner rider and has been required since 1990. All learner motorcycle and moped riders must complete it before riding on the road, and it's also required for car licence holders wanting to use their moped entitlement. MB Motorcycle Training is approved by the DVSA as an Approved Training Body (ATB)."
+          - question: "What does the CBT course involve?"
+            answer: "CBT covers five elements taken in sequence: (A) an eyesight test and safety talk, (B) learning the bike's controls, (C) learning to ride the bike, (D) a theory talk, and (E) riding on the road. It can usually be completed in one day, subject to ability. Full details are on the gov.uk CBT page."
+          - question: "What happens after I complete CBT?"
+            answer: "Once you've completed all 5 elements you'll be issued a Certificate of Completion (DL196), which lets you ride on the road on a learner-legal motorcycle. You can then book your theory test, and once you've passed that, your practical test."
+          - question: "What safety equipment do I need for CBT?"
+            answer: "Mike can provide a helmet, motorcycle jacket and gloves if needed. The minimum requirement for bottoms is jeans — shell suit or tracksuit bottoms are not permitted. You will also need substantial footwear which covers your ankles — such as walking boots — without steel toecaps."
+
+      - name: "Theory Test"
+        items:
+          - question: "How do I book my motorcycle theory test?"
+            answer: "You can book directly on gov.uk. You'll need to have passed CBT first."
+          - question: "Can I change or cancel my theory test?"
+            answer: "Yes — this can also be done directly through gov.uk."
+
+      - name: "Practical Test"
+        items:
+          - question: "Does Mike help with booking my practical test?"
+            answer: "Yes — Mike takes away the hassle of booking your own practical test and will book it for you. You'll need to have passed your theory test first."
+          - question: "Has anything changed about which bike I can use for my test?"
+            answer: "Yes — the rules for the types of moped or motorcycle you can use for your practical test changed on 19 January 2013. Full details are on gov.uk."
+
+      - name: "Access Routes (Restricted, Direct & Progressive)"
+        items:
+          - question: "What is Direct Access?"
+            answer: "Direct Access lets you train and test on a larger motorcycle at the appropriate minimum age, rather than progressing through smaller machines first. While practising for your test on a bike larger than a standard learner machine, you must be accompanied at all times by an approved Direct Access instructor on another bike, in radio contact, and wear fluorescent or reflective clothing, alongside your other provisional licence restrictions."
+          - question: "What is Progressive Access?"
+            answer: "Progressive Access lets you build up through licence categories over time — for example, 2 years of experience on an A1 motorcycle before taking further practical tests to move up to A2, and similarly from A2 to the full A licence."
+          - question: "What is Accelerated Access?"
+            answer: "If you pass your A2 licence at 23, you'd normally face a 2-year restriction to motorcycles not exceeding 35kW. Accelerated Access lets you instead take Direct Access on a big bike (minimum 595cc, 40kW/54bhp) once you turn 24."
+          - question: "What is Restricted Access?"
+            answer: "This refers to the licence categories (AM, A1, A2) that restrict you to a particular size or power of machine, as opposed to the full, unrestricted A licence."
+
+      - name: "Legal Requirements"
+        items:
+          - question: "Do I need insurance to ride?"
+            answer: "Yes — it's illegal to ride without insurance. Third party is the legal minimum and covers people and property you might injure or damage, but not you or your own bike. Third party, fire and theft adds cover for your bike being stolen or damaged by fire. Comprehensive is the most complete cover, including damage to your own machine and personal injury to yourself."
+          - question: "Does insurance cover carrying a passenger?"
+            answer: "Not automatically — pillion passenger cover is now optional on most policies, so check whether it's included if you plan to carry a passenger."
+          - question: "What affects the cost of my insurance?"
+            answer: "Cost varies by your age, the make of your motorcycle, its engine power and capacity, and where you live. Insurance groupings can differ between insurers, so it's worth shopping around."
+          - question: "Do I need an MOT?"
+            answer: "Yes, once your motorcycle is three years old or over. The MOT is required annually at an approved testing station to confirm your bike is roadworthy. If your bike fails, you can't ride it on the road except to get the fault fixed or to attend a retest."
+          - question: "Do I need to pay vehicle excise duty (road tax)?"
+            answer: "Yes, unless your motorcycle was registered before 1 January 1973, in which case it's exempt (though you should still display a tax-free/historic disc). The fee depends on engine size."
+          - question: "What are the rules on helmets?"
+            answer: "By law you must wear a safety helmet when riding on the road, and all helmets sold in the UK must comply with the ECE 22.05 motorcycle helmet safety standard."
+
+      - name: "Practical Stuff"
+        items:
+          - question: "Where can I park when I visit for training?"
+            answer: "You can park at the Climax Cafe, which is pretty much directly opposite."

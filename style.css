@@ -79,7 +79,6 @@ a:hover {
   text-decoration: underline;
 }
 
-
 /* Screen-reader-only content: stays in the accessibility tree, hidden visually */
 .visually-hidden {
   position: absolute;
@@ -498,20 +497,65 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
-.perks-list {
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.testimonial-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--color-brand);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.3rem;
+  margin: 0;
+  box-shadow: var(--shadow-soft);
+}
+
+.testimonial-quote {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--text-body);
+  font-style: italic;
+  margin: 0 0 0.6rem 0;
+}
+
+.testimonial-attribution {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-style: normal;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  color: var(--color-brand);
+  font-size: 0.9rem;
+}
+
+.testimonial-context {
+  color: var(--text-soft);
+  font-size: 0.82rem;
+}
+
+.facts-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.perks-list li {
+.facts-list li {
   position: relative;
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  padding-left: 1.4rem;
+  margin-bottom: 0.7rem;
   line-height: 1.5;
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
-.perks-list li::before {
+.facts-list li::before {
   content: "✓";
   color: var(--color-brand);
   font-weight: bold;
@@ -1060,6 +1104,85 @@ a:hover {
   height: 100%;
   display: block;
   object-fit: contain;
+}
+
+/* ==========================================================================
+   FAQ section
+   ========================================================================== */
+#faq-section {
+  flex: 1 1 100%;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+.faq-wrap h1 {
+  font-size: 2rem;
+  color: var(--color-brand);
+  margin-bottom: 0.5rem;
+}
+.faq-intro {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+.faq-category {
+  margin-bottom: 2.5rem;
+}
+.faq-category h2 {
+  font-size: 1.3rem;
+  color: var(--color-brand-dark);
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.faq-item {
+  background: var(--surface-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+.faq-question {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  color: var(--text-body);
+  font-size: 1rem;
+  position: relative;
+  padding-right: 2.5rem;
+}
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+.faq-question::after {
+  content: "+";
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-brand);
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+.faq-item[open] .faq-question::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.faq-item[open] .faq-question {
+  border-bottom: 1px solid var(--border-light);
+}
+.faq-answer {
+  padding: 0 1.25rem 1rem 1.25rem;
+}
+.faq-answer p {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0.75rem 0 0 0;
+  font-size: 0.98rem;
 }
 
 /* ==========================================================================

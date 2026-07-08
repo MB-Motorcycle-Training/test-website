@@ -10,6 +10,7 @@ DATA_FILE = ROOT_DIR / "data" / "data.yaml"
 BUILD_TARGETS = [
     ("index.jinja.html", "index.html"),
     ("courses.jinja.html", "courses.html"),
+    ("faq.jinja.html", "faq.html"),
 ]
 STYLESHEET = "style.css"
 
