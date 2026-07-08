@@ -252,7 +252,7 @@ pages_content:
           - question: "Do I need an MOT?"
             answer: "Yes, once your motorcycle is three years old or over. The MOT is required annually at an approved testing station to confirm your bike is roadworthy. If your bike fails, you can't ride it on the road except to get the fault fixed or to attend a retest."
           - question: "Do I need to pay vehicle excise duty (road tax)?"
-            answer: "Yes, unless your motorcycle was registered before 1 January 1973, in which case it's exempt (though you should still display a tax-free/historic disc). The fee depends on engine size."
+            answer: "Yes, unless your motorcycle was registered before 1 January 1973, in which case it's exempt. The fee depends on engine size."
           - question: "What are the rules on helmets?"
             answer: "By law you must wear a safety helmet when riding on the road, and all helmets sold in the UK must comply with the ECE 22.05 motorcycle helmet safety standard."
 
@@ -260,3 +260,13 @@ pages_content:
         items:
           - question: "Where can I park when I visit for training?"
             answer: "You can park at the Climax Cafe, which is pretty much directly opposite."
+  find_us:
+    title: "Find Us"
+    training_address: "Adjacent to Beech Works, Stubley Hollow, Wreakes Ln, Dronfield S18 1PN"
+    training_lat: 53.307384
+    training_lng: -1.479749
+    parking_note: "You can park at the Climax Cafe, which is pretty much directly opposite."
+    parking_address: "2 Stubley Hollow, Dronfield S18 1PP"
+    parking_lat: 53.30815
+    parking_lng: -1.482126
+

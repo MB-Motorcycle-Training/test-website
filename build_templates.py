@@ -11,6 +11,7 @@ BUILD_TARGETS = [
     ("index.jinja.html", "index.html"),
     ("courses.jinja.html", "courses.html"),
     ("faq.jinja.html", "faq.html"),
+    ("find_us.jinja.html", "find_us.html"),
 ]
 STYLESHEET = "style.css"
 
