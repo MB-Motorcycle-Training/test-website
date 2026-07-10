@@ -1,4 +1,22 @@
-{% set terms = page_content.terms_conditions %}
+{% set cancellation = page_content.cancellation %} {% set terms =
+page_content.terms_conditions %}
+
+<div class="policy-section">
+  <div class="policy-card alert-card">
+    <div class="card-header">
+      <span class="warning-badge"
+        >{{ cancellation.notice_period }}</span
+      >
+      <h2>{{ cancellation.title }}</h2>
+    </div>
+    <div class="card-body">
+      <p class="highlight-text">{{ cancellation.core_rule }}</p>
+      <div class="danger-box">
+        {{ cancellation.penalty }}
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="terms-section">
   <h3>{{ terms.title }}</h3>

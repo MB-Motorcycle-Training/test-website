@@ -391,6 +391,115 @@ a:hover {
 }
 
 /* ==========================================================================
+   CSS Scroll-Snap Carousel Component
+   ========================================================================== */
+.hero-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  background: #000000;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-page);
+  aspect-ratio: 21 / 9;
+}
+
+.carousel-viewport {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel-viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  display: block;
+}
+
+.carousel-caption-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 3rem 2rem 1.5rem 2rem;
+  color: #ffffff;
+}
+
+.carousel-caption-overlay p {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: var(--font-body);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 2rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+  z-index: 10;
+  user-select: none;
+}
+
+.carousel-arrow:hover {
+  background: var(--color-gold);
+  color: var(--color-navy);
+  border-color: var(--color-gold);
+}
+
+.carousel-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.carousel-arrow.prev {
+  left: 1rem;
+}
+.carousel-arrow.next {
+  right: 1rem;
+}
+
+/* ==========================================================================
    Reviews
    ========================================================================== */
 #reviews-section {
@@ -1024,6 +1133,121 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
+.policy-section {
+  margin-bottom: 1rem;
+  max-width: 900px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.policy-card {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: var(--radius-xl, 12px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Make the cancellation card instantly jump out */
+.policy-card.alert-card {
+  border-left: 6px solid #d946ef; /* Bright energetic neon pink or warning crimson */
+  background: #fff5f5;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.warning-badge {
+  background: #dc2626;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+.highlight-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.danger-box {
+  background: rgba(220, 38, 38, 0.08);
+  border: 1px solid rgba(220, 38, 38, 0.2);
+  padding: 1.25rem;
+  border-radius: 6px;
+  color: #991b1b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Gear & Legal Lists */
+.gear-list,
+.legal-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
+}
+
+.gear-list li,
+.legal-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.gear-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.legal-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-gold, #d97706);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.sub-alert {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.premises-note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+  .policy-card {
+    padding: 1.5rem;
+  }
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
 .terms-section {
   background: rgba(63, 63, 116, 0.03);
   padding: 2.5rem;
@@ -1335,6 +1559,25 @@ a:hover {
 
   .call-number {
     font-size: 0.85rem;
+  }
+
+  .hero-carousel-wrapper {
+    aspect-ratio: 16 / 10;
+    border-radius: 0;
+  }
+
+  .carousel-caption-overlay {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .carousel-caption-overlay p {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+
+  /* Hide arrows on mobile—native touch swipe mechanics rule here */
+  .carousel-arrow {
+    display: none;
   }
 
   .courses-grid {

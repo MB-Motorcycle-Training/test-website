@@ -28,17 +28,43 @@ pages_meta:
     twitter:
       card: "summary_large_image"
     schema_json: |
-      {
+     {
         "@context": "https://schema.org",
         "@type": "DrivingSchool",
         "name": "MB Motorcycle Training",
+        "image": "https://www.mikesmotorcycletraining.co.uk/images/og-share-card.jpg",
+        "@id": "https://www.mbmotorcycletraining.co.uk/#drivingschool",
+        "url": "https://www.mbmotorcycletraining.co.uk",
+        "telephone": "+447768340340",
+        "priceRange": "££",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Beech Works, Stubley Hollow, Wreakes Lane",
           "addressLocality": "Dronfield",
           "postalCode": "S18 1PN",
           "addressCountry": "GB"
-        }
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 53.307384,
+          "longitude": -1.479749
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "08:00",
+            "closes": "16:30"
+          }
+        ]
       }
 
   courses:
@@ -61,18 +87,6 @@ pages_meta:
     twitter:
       card: "summary_large_image"
 
-  links:
-    title: "Useful Biking Resources & Links | MB Motorcycle Training"
-    description: "Access essential resources for riders, including official DVSA mock tests, clothing safety ratings, and regional motorcycle clubs."
-    slug: "links.html"
-    robots: "index, follow"
-    opengraph:
-      type: "article"
-      image: "images/og-links.jpg"
-      image_alt: "Motorcycle accessories and safety gear laid out on a table"
-    twitter:
-      card: "summary_large_image"
-
   faq:
     title: "Frequently Asked Questions | MB Motorcycle Training"
     description: "Got questions about passing your CBT, clothing requirements, or Direct Access restrictions? Find clear answers here."
@@ -87,6 +101,17 @@ pages_meta:
 
 pages_content:
   index:
+    carousel:
+      slides:
+        - image: "assets/carousel/rider-training.jpeg"
+          alt: "Rider training"
+          caption: "Rider Training"
+        - image: "assets/carousel/rider-training.jpeg"
+          alt: "Rider training"
+          caption: "This is where you'd put your other photos"
+        - image: "assets/carousel/rider-training.jpeg"
+          alt: "Rider training"
+          caption: "Etc"
     about_services:
       why_train_with_mike:
         title: "Why Train With Mike?"
@@ -178,21 +203,26 @@ pages_content:
         price: "£150"
         extras: "Pay as you go has limited availability - please enquire for details. Prices for 2½-3 hour lesson. CBT and Mod 1 training have a one-off fee of £250 each."
 
+    cancellation:
+      title: "Cancellation & Rearrangement"
+      notice_period: "48 Hours Strict Notice"
+      core_rule: "All fees paid are strictly non-refundable. You can re-arrange any lesson completely free of charge provided you give at least 48 hours' notice via phone, voicemail, or text."
+      penalty: "Cancellations or no-shows with less than 48 hours' notice are immediately forfeited. No exceptions will be made except for documented emergencies (e.g. medical hospitalisation or bereavement) where official evidence must be provided before a rewrite is considered."
+
     terms_conditions:
       title: "Terms & Conditions"
       notes:
         - "Test fees subject to change by DVSA."
         - "Full Terms & Conditions are available to view at training premises."
-        - "Trainees using their own motorcycles must ensure that their bikes meet all legal requirements."
-        - "Trainees are responsible for themselves to meet the legal requirements to ride the bike."
-        - "Fees paid are non-refundable. Lessons may be re-arranged free of charge with at least 24 hours' notice (phone, voicemail, or text)."
+        - "Trainees are responsible for themselves to meet the legal requirements to ride the bike and are legally fit to ride - not under the influence of drugs or alcohol."
+        - "Fees paid are non-refundable. Lessons may be re-arranged free of charge with at least 48 hours' notice (phone, voicemail, or text)."
         - "Appropriate clothing is required for motorcycle training. This means sturdy denim or motorcycle trousers with no rips or tears, and substantial footwear that fully covers the ankle, such as walking boots or similar sturdy boots. Steel toe-caps are not permitted, as they reduce feel through the footwear needed for gear changes."
-      summary: "Cancellations with less than 24 hours' notice will be treated as forfeited, except in cases of genuine emergency (e.g. bereavement, hospitalisation, serious illness or injury), where evidence may be requested (e.g. a hospital letter or similar documentation) before a re-arranged lesson or refund is considered at the instructor's discretion. All in-training packages must be completed within 12 months from the start date. Insurance cover for the motorbike training will be covered to third party and training bike, NOT to personal injury. Although professional instruction will be given to the trainee throughout, any decisions during the instruction made by the trainee are their responsibility. All monies paid or courses booked are non-transferable. Traffic violations are the responsibility of the trainee and not the Instructor."
+      summary: "Cancellations with less than 48 hours' notice will be treated as forfeited, except in cases of genuine emergency (e.g. bereavement, hospitalisation, serious illness or injury), where evidence may be requested (e.g. a hospital letter or similar documentation) before a re-arranged lesson or refund is considered at the instructor's discretion. All in-training packages must be completed within 12 months from the start date. Insurance cover for the motorbike training will be covered to third party and training bike, NOT to personal injury. Although professional instruction will be given to the trainee throughout, any decisions during the instruction made by the trainee are their responsibility. All monies paid or courses booked are non-transferable. Traffic violations are the responsibility of the trainee and not the Instructor."
     mod1_video:
       title: "Watch a Mod 1 Run-Through"
       blurb: "Check out exactly what to expect on the DVSA training pad. Watch the lines, the speeds, and the layout before your big day."
       filename: "assets/final_720_h265_fadeout.mp4"
-      poster: "assets/mod1-video-thumb.jpg"
+      poster: "assets/mod-1-thumbnail.png"
 
   faq:
     title: "Frequently Asked Questions"
@@ -212,14 +242,14 @@ pages_content:
           - question: "What does the CBT course involve?"
             answer: "CBT covers five elements taken in sequence: (A) an eyesight test and safety talk, (B) learning the bike's controls, (C) learning to ride the bike, (D) a theory talk, and (E) riding on the road. It can usually be completed in one day, subject to ability. Full details are on the gov.uk CBT page."
           - question: "What happens after I complete CBT?"
-            answer: "Once you've completed all 5 elements you'll be issued a Certificate of Completion (DL196), which lets you ride on the road on a learner-legal motorcycle. You can then book your theory test, and once you've passed that, your practical test."
+            answer: "Once you've completed all 5 elements you'll be issued a Certificate of Completion (DL196), which lets you ride on the road on a learner-legal motorcycle. You will need to complete a theory test, and once you've passed that, your practical test."
           - question: "What safety equipment do I need for CBT?"
             answer: "Mike can provide a helmet, motorcycle jacket and gloves if needed. The minimum requirement for bottoms is jeans — shell suit or tracksuit bottoms are not permitted. You will also need substantial footwear which covers your ankles — such as walking boots — without steel toecaps."
 
       - name: "Theory Test"
         items:
           - question: "How do I book my motorcycle theory test?"
-            answer: "You can book directly on gov.uk. You'll need to have passed CBT first."
+            answer: "You can book directly on gov.uk."
           - question: "Can I change or cancel my theory test?"
             answer: "Yes — this can also be done directly through gov.uk."
 
@@ -262,7 +292,7 @@ pages_content:
             answer: "You can park at the Climax Cafe, which is pretty much directly opposite."
   find_us:
     title: "Find Us"
-    training_address: "Adjacent to Beech Works, Stubley Hollow, Wreakes Ln, Dronfield S18 1PN"
+    training_address: "Adjacent to Beech Works, Stubley Hollow, Wreakes Ln, Dronfield S18 1PN. We are next to Screwfix."
     training_lat: 53.307384
     training_lng: -1.479749
     parking_note: "You can park at the Climax Cafe, which is pretty much directly opposite."
